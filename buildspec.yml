@@ -9,7 +9,7 @@ phases:
     commands:
       - >
         date "+%Y%m%d-%H%M%S-$(git rev-parse --short HEAD)"
-            > eb-app-version.txt
+        > eb-app-version.txt
       - cat eb-app-version.txt
   post_build:
     commands: []
